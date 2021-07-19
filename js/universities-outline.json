@@ -219,7 +219,7 @@
 	}, {
 		"type": "Feature",
 		"properties": {
-			"classmates": 2
+			"classmates": 3
 		},
 		"geometry": {
 			"type": "LineString",
