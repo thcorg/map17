@@ -241,6 +241,20 @@
 	}, {
 		"type": "Feature",
 		"properties": {
+			"name": "燕山大学",
+			"abbr": "YSU",
+			"campus": "东",
+			"slogan": "厚德　博学　求是",
+			"classmates": ["U2FsdGVkX1+uLNjkYsoipbbEdwQjc/D6LIDNnssGCx4="],
+			"province": "河北"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [119.540563, 39.902762]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
 			"name": "中国地质大学 (武汉)",
 			"abbr": "CUG",
 			"campus": "本",
