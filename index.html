@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>我们的蹭饭地图</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="modal fade" id="modal-verify" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h4 class="modal-title">验证身份信息</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>为了验证您的身份，请填写下面模型中红色“????????”处原有的汉字，其中<strong>无需</strong>输入任何含空格在内的标点符号。验证身份后方可查看加密信息。</p>
+                        <form onsubmit="return false;">
+                            <div class="form-group" id="form-group-verify">
+                                <label class="control-label" for="input-verify">验证信息</label>
+                                <input type="text" class="form-control" id="input-verify" placeholder="在此输入验证信息…">
+                              </div>
+                        </form>
+                        <center>
+                            <canvas class="zdog-canvas" width="240" height="180"></canvas>
+                        </center><br />
+                        <p><small>如果您看不到模型，请尝试刷新网页。若刷新无果，请尝试更换现代浏览器，如 Edge、Chrome、Firefox、Opera、Safari 等。理论上 QQ 浏览器、360 浏览器等含 Chromium 内核的浏览器亦可使用。</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" class="btn btn-primary" id="btn-modal-verify">验证</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span> 菜单
+                    </button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas">
+                        <span class="glyphicon glyphicon-th-list"></span> 列表
+                      </button>
+                    <a class="navbar-brand" href="#">蹭饭地图</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-cog"></span> 设置 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" id="btn-image-visible">
+                                    <span class="glyphicon glyphicon-picture"></span>
+                                    隐藏 / 显示图片
+                            </a></li>
+                            <li><a href="#" id="btn-marker-visible">
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                                隐藏 / 显示标记
+                            </a></li>
+                            <li><a href="#" id="btn-anim-visible">
+                                <span class="glyphicon glyphicon-flash"></span>
+                                隐藏 / 显示动效
+                            </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" id="btn-verify" data-toggle="modal" data-target="#modal-verify">填写验证信息</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-globe"></span> 地图样式 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" id="list-map-style">
+                            <li><a href="#" data-style="normal">标准</a></li>
+                            <li><a href="#" data-style="macaron">马卡龙 (默认)</a></li>
+                            <li><a href="#" data-style="graffiti">涂鸦</a></li>
+                            <li><a href="#" data-style="whitesmoke">远山黛</a></li>
+                            <li><a href="#" data-style="fresh">草色青</a></li>
+                            <li><a href="#" data-style="light">月光银</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" data-style="dark">幻影黑</a></li>
+                            <li><a href="#" data-style="darkblue">极夜蓝</a></li>
+                            <li><a href="#" data-style="blue">靛青蓝</a></li>
+                            <li><a href="#" data-style="grey">雅士灰</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div class="alert alert-info alert-dismissible fade in" id="alert-verify">
+                <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+                <h4>您尚未获得查看权限！</h4>
+                <p>本页对部分信息进行了加密处理，验证您的身份信息后方可获得查看权限。请点击下方按钮，或进入
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    菜单 - 
+                    <span class="glyphicon glyphicon-cog"></span>
+                    设置
+                    以验证您的身份信息。
+                </p>
+                <p><button class="btn btn-info" id="btn-verify" data-toggle="modal" data-target="#modal-verify">验证身份信息</button></p>
+            </div>
+            <div class="row row-offcanvas row-offcanvas-right">
+                <div class="col xs-12 col-sm-9">
+                    <div id="map-container"></div>
+                </div>
+                <div class="col-xs-9 col-sm-3 sidebar-offcanvas" id="sidebar">
+                    <h3>院校列表</h3>
+                    <div class="input-group" style="margin-bottom: 5px;">
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </span>
+                        <input type="text" class="form-control" id="input-search" placeholder="搜索…">
+                    </div>
+                    <div class="btn-group btn-group-justified" id="sort-by-button-group" style="margin-bottom: 5px;">
+                        <a href="#" class="btn btn-default" data-sort-by="abbr">
+                            <span class="glyphicon glyphicon-sort-by-alphabet"></span>
+                            升序
+                        </a>
+                        <a href="#" class="btn btn-default" data-sort-by="abbrDes">
+                            <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
+                            降序
+                        </a>
+                    </div>
+                    <div class="btn-group btn-group-justified" style="margin-bottom: 5px;">
+                        <a href="#" class="btn btn-default" id="btn-shuffle">
+                            <span class="glyphicon glyphicon-transfer"></span>
+                            随机
+                        </a>
+                    </div>
+                    <div class="alert alert-danger fade in" id="alert-verify-guide">
+                        <p><strong>您尚未获得查看权限！</strong>请进入
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                            菜单 - 
+                            <span class="glyphicon glyphicon-cog"></span>
+                            设置
+                            以验证身份信息。
+                        </p>
+                    </div>
+                    <div class="list-group" id="map-list"></div>
+                    <h3>声明</h3>
+                    <p>本网页支持中华人民共和国领土主权与领土完整。</p>
+                    <p>本网页采用的数字地图来自<a href="https://lbs.amap.com/" target="_blank">高德开放平台</a>提供的<a href="https://lbs.amap.com/api/javascript-api" target="_blank">地图 JS API</a>；引用的“美食中国地图”插画来自网络，因艺术表现、坐标转换等原因，在范围等方面存在误差，仅作装饰之用，不代表中华人民共和国实际领土范围及面积。</p>
+                    <p>本网页在 GitHub 开源，仅供学习参考，不作商业用途，并由以下平台或软件提供技术支持：</p>
+                    <ul>
+                        <li>
+                            <a href="https://lbs.amap.com/" target="_blank">高德开放平台</a>
+                            <ul>
+                                <li><a href="https://lbs.amap.com/api/javascript-api/" target="_blank">地图 JS API</a></li>
+                                <li><a href="https://lbs.amap.com/api/amap-ui/" target="_blank">AMapUI 组件库</a></li>
+                                <li><a href="https://lbs.amap.com/api/loca-v2/" target="_blank">数据可视化 JS API</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap 3</a></li>
+                        <li><a href="https://jquery.com/" target="_blank">jQuery v3.6.0</a></li>
+                        <li><a href="https://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
+                        <li><a href="https://zzz.dog" target="_blank">Zdog</a></li>
+                        <li><a href="https://jaames.github.io/zfont/" target="_blank">Zfont</a></li>
+                        <li><a href="https://github.com/brix/crypto-js" target="_blank">CryptoJS</a></li>
+                    </ul>
+                    <p>本网页展示的 Zdog 模型中使用的字体为 <a href="https://developer.harmonyos.com/cn/design" target="_blank">HarmonyOS Sans</a>。</p>
+                    <p>“美食中国地图”插画来自网络，由于能力不足，我们未能找到插画作者。如果引用该插画侵犯了您的权益，请<a href="mailto:hcrpaandaa@outlook.com">致邮</a>联系，我们将在收到来信后删除该插画的引用，在此提前表示歉意。</p>
+                    <p>本网页展示的列表无先后顺序之分。</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://webapi.amap.com/maps?v=2.0&key=82be1bd1a7fe4b735f88c2534dcc9e82"></script>
+        <script src="https://webapi.amap.com/loca?v=2.0.0&key=82be1bd1a7fe4b735f88c2534dcc9e82"></script>
+        <script src="https://webapi.amap.com/ui/1.1/main.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/crypto-js/crypto-js.js"></script>
+        <script src="js/zdog.dist.min.js"></script>
+        <script src="js/zfont.min.js"></script>
+        <script src="js/main-map.js"></script>
+        <script src="js/main-zdog.js"></script>
+    </body>
+</html>

@@ -1,0 +1,284 @@
+{
+	"type": "FeatureCollection",
+	"features": [{
+		"type": "Feature",
+		"properties": {
+			"name": "北京师范大学",
+			"abbr": "BNU",
+			"campus": "北京",
+			"slogan": "学为人师　行为世范",
+			"classmates": ["U2FsdGVkX19v1orcqtcz9KHxgGVoycHtPaYyuOVIKaE="],
+			"province": "北京"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [116.365503, 39.961076]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "北京邮电大学",
+			"abbr": "BUPT",
+			"campus": "沙河",
+			"slogan": "厚德博学　敬业乐群",
+			"classmates": ["U2FsdGVkX1825I9eOaZmE2/q/qwbkWSo6Jdl96lAQjs="],
+			"province": "北京"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [116.289887, 40.157615]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "重庆大学",
+			"abbr": "CQU",
+			"campus": "虎溪",
+			"slogan": "耐劳苦　尚俭朴<br />勤学业　爱国家",
+			"classmates": ["U2FsdGVkX1+su7ZAN6FS1Koz9/vKhwlZlyWaJicaxbs="],
+			"province": "重庆"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [106.29915, 29.592566]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "大连理工大学",
+			"abbr": "DLUT",
+			"campus": "盘锦",
+			"slogan": "团结　进取　求实　创新",
+			"classmates": ["U2FsdGVkX1+Sy3bKkkItrcwtb2ygGMC5aV+gAau5ugo="],
+			"province": "辽宁"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [122.124892, 40.688184]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "电子科技大学",
+			"abbr": "UESTC",
+			"campus": "清水河",
+			"slogan": "求实求真　大气大为",
+			"classmates": ["U2FsdGVkX19w+xU0laQ4hoCvm4OXXRzbqCAOsdkgGiM=", "U2FsdGVkX1/A6eDApunnBTzsKaRX2KZqcE/WzR9a4uQ="],
+			"province": "四川"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [103.931658, 30.749167]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "东北大学",
+			"abbr": "NEU",
+			"campus": "南湖",
+			"slogan": "自强不息　知行合一",
+			"classmates": ["U2FsdGVkX19r1RdTYC1dMzmAgGCYLoXHF0Z9We4ECck=", "U2FsdGVkX19feTxozeO6gRfuuU+Sh8JvFflTD7ScDkg="],
+			"province": "辽宁"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [123.418324, 41.765235]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "华北电力大学",
+			"abbr": "NCEPU",
+			"campus": "北京",
+			"slogan": "团结　勤奋　求实　创新",
+			"classmates": ["U2FsdGVkX1+gPnHLxP257fVle8tlvdb/+ljYzJrXuO4="],
+			"province": "北京"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [116.310177, 40.089684]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "华中农业大学",
+			"abbr": "HZAU",
+			"campus": "本",
+			"slogan": "勤读力耕　立己达人",
+			"classmates": ["U2FsdGVkX1+pkVkib9BNJ8TdBYjB0YIfANd1jsQiRnU="],
+			"province": "湖北"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [114.356769, 30.474852]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "吉林大学",
+			"abbr": "JLU",
+			"campus": "前卫",
+			"slogan": "求实创新　励志图强",
+			"classmates": ["U2FsdGVkX1+jrMD9kgRg0AilrjlZ08Y5KfC1wknJ17c=", "U2FsdGVkX19Bz3h/sPreNY4/4Me+UkRXy/l0osIzVZU="],
+			"province": "吉林"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [125.277063, 43.823761]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "江南大学",
+			"abbr": "JIANGNAN",
+			"campus": "蠡湖",
+			"slogan": "笃学尚行　止于至善",
+			"classmates": ["U2FsdGVkX1/M7qwAl63ie2g1udAzYbmzlTpSA1LGYS0="],
+			"province": "江苏"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [120.27116, 31.483652]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "南京理工大学",
+			"abbr": "NJUST",
+			"campus": "南京",
+			"slogan": "进德修业　志道鼎新",
+			"classmates": ["U2FsdGVkX1+/etXcmr/021ExGqVC3aYS9aY8D0yfPXg="],
+			"province": "江苏"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [118.855629, 32.02891]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "四川大学",
+			"abbr": "SCU",
+			"campus": "望江",
+			"slogan": "海纳百川　有容乃大",
+			"classmates": ["U2FsdGVkX18sV34iWnjFffM8wxVZRzSD0SQc9kcMsjQ="],
+			"province": "四川"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [104.083766, 30.630647]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "武汉大学",
+			"abbr": "WHU",
+			"campus": "本",
+			"slogan": "自强　弘毅　求是　拓新",
+			"classmates": ["U2FsdGVkX19glDzDYb9JYvLnNhddobQwlwqIQ/IjR0k="],
+			"province": "湖北"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [114.364382, 30.536325]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "武汉理工大学",
+			"abbr": "WHUT",
+			"campus": "余家头",
+			"slogan": "厚德博学　追求卓越",
+			"classmates": ["U2FsdGVkX19v6ql2lr2jpWb+6AUCeuRXY7/Xm+8kpn4="],
+			"province": "湖北"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [114.35659, 30.606353]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "西安交通大学",
+			"abbr": "XJTU",
+			"campus": "兴庆",
+			"slogan": "精勤求学　敦笃励志<br />果毅力行　忠恕任事",
+			"classmates": ["U2FsdGVkX1+zC4NazhHTvxC0z+ayNk0bCUeT9HxtHgQ="],
+			"province": "陕西"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [108.98378, 34.246207]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "西北工业大学",
+			"abbr": "NWPU",
+			"campus": "长安",
+			"slogan": "公　诚　勇　毅",
+			"classmates": ["U2FsdGVkX1882dzWzr4DXWUphzdtFfGEbw7Gf9zEY6A="],
+			"province": "陕西"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [108.764328, 34.02893]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "郑州大学",
+			"abbr": "ZZU",
+			"campus": "本",
+			"slogan": "求是担当",
+			"classmates": ["U2FsdGVkX1+tLIGBYfywWPeYy/13THVRys+HYyJsZy8=", "U2FsdGVkX19mGlysLpapLmiLr0lNLeystSLv+7bFxVA="],
+			"province": "河南"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [113.53591, 34.817077]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "中国地质大学 (武汉)",
+			"abbr": "CUG",
+			"campus": "本",
+			"slogan": "艰苦朴素　求真务实",
+			"classmates": ["U2FsdGVkX1/H559MOxWXkv/mMg8vxjJsLXs9V/toW7Q=", "U2FsdGVkX19NtPhEum+U/xIGvLadJu9YC9599t1lbB8="],
+			"province": "湖北"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [114.398876, 30.520911]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "中南财经政法大学",
+			"abbr": "ZUEL",
+			"campus": "南湖",
+			"slogan": "博文明理　厚德济世",
+			"classmates": ["U2FsdGVkX19Ew6vAvVcF9/SEs5NL3IEgyqEtY3Big5o="],
+			"province": "湖北"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [114.386234, 30.473798]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "孟州市第一高级中学",
+			"abbr": "MZYZ",
+			"campus": "原",
+			"slogan": "团结　高效　务实　文明",
+			"classmates": [],
+			"province": "河南"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [112.77871, 34.922213]
+		}
+	}]
+}

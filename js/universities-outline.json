@@ -1,0 +1,244 @@
+{
+	"type": "FeatureCollection",
+	"features": [{
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[116.365503, 39.961076]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[116.289887, 40.157615]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[106.29915, 29.592566]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[122.124892, 40.688184]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 2
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[103.931658, 30.749167]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 2
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[123.418324, 41.765235]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[116.310177, 40.089684]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[114.356769, 30.474852]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 2
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[125.277063, 43.823761]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[120.27116, 31.483652]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[118.855629, 32.02891]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[104.083766, 30.630647]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[114.364382, 30.536325]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[114.35659, 30.606353]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[108.98378, 34.246207]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[108.764328, 34.02893]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 2
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[113.53591, 34.817077]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 2
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[114.398876, 30.520911]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[114.386234, 30.473798]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 0
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[112.77871, 34.922213]
+			]
+		}
+	}]
+}

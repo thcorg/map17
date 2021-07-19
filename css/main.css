@@ -1,0 +1,125 @@
+/* stylelint-disable property-no-vendor-prefix */
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html, body {
+   overflow-x: hidden;
+}
+body {
+   padding-top: 15px;
+}
+footer {
+   padding: 30px 0;
+}
+#map-container {
+    height: 500px;
+    width: 100%;
+}
+.arrow, .arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid
+}
+.arrow:after {
+    content: "";
+    border-width: 10px
+}
+.arrow {
+    bottom: -11px;
+    left: 50%;
+    margin-left: -11px;
+    border-top-color: #999;
+    border-top-color: rgba(0,0,0,.25);
+    border-bottom-width: 0
+}
+.arrow:after {
+    bottom: 1px;
+    margin-left: -10px;
+    content: " ";
+    border-top-color: #fff;
+    border-bottom-width: 0
+}
+.panel.panel-default {
+    margin: 0 !important;
+    width: 220px;
+}
+.bottom-center.amap-info-contentContainer {
+    padding: 0 !important;
+}
+#sidebar {
+    max-height: 500px;
+    overflow-y: auto;
+}
+#map-list-item {
+    border-radius: 4px;
+    margin-bottom: 5px;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+}
+.zdog-canvas {
+    background: #E6E6E6;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    touch-action: none;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    user-select:none;
+}
+#input-verify {
+    text-align: center;
+}
+ 
+ /*
+  * Off Canvas
+  * --------------------------------------------------
+  */
+ @media screen and (max-width: 768px) {
+   .row-offcanvas {
+     position: relative;
+     -webkit-transition: all .25s ease-out;
+     -o-transition: all .25s ease-out;
+     transition: all .25s ease-out;
+   }
+ 
+   .row-offcanvas-right {
+     right: 0;
+   }
+ 
+   .row-offcanvas-left {
+     left: 0;
+   }
+ 
+   .row-offcanvas-right .sidebar-offcanvas {
+     right: calc(-75% + 15px); /* 6 columns */
+   }
+ 
+   .row-offcanvas-left .sidebar-offcanvas {
+     left: -50%; /* 6 columns */
+   }
+ 
+   .row-offcanvas-right.active {
+     right: calc(75% + 15px); /* 6 columns */
+   }
+ 
+   .row-offcanvas-left.active {
+     left: 50%; /* 6 columns */
+   }
+ 
+   .sidebar-offcanvas {
+     position: absolute;
+     top: 0;
+     width: 75%; /* 6 columns */
+   }
+ }
+ 
+ 
