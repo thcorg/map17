@@ -45,6 +45,20 @@
 	}, {
 		"type": "Feature",
 		"properties": {
+			"name": "重庆邮电大学",
+			"abbr": "CQUPT",
+			"campus": "本",
+			"slogan": "修德　博学　求实　创新",
+			"classmates": ["U2FsdGVkX19o1fcJbjhU3IMw96Rzjv6a5AAel6BDdyQ="],
+			"province": "重庆"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [106.607617,29.530807]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
 			"name": "大连理工大学",
 			"abbr": "DLUT",
 			"campus": "盘锦",
@@ -77,8 +91,22 @@
 			"abbr": "NEU",
 			"campus": "南湖",
 			"slogan": "自强不息　知行合一",
-			"classmates": ["U2FsdGVkX19r1RdTYC1dMzmAgGCYLoXHF0Z9We4ECck=", "U2FsdGVkX19feTxozeO6gRfuuU+Sh8JvFflTD7ScDkg="],
+			"classmates": ["U2FsdGVkX1+hd16Ymr8FFHpqxoGSdNlB4XA+RWxj/dU=", "U2FsdGVkX19feTxozeO6gRfuuU+Sh8JvFflTD7ScDkg="],
 			"province": "辽宁"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [123.418324, 41.765235]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "东北大学秦皇岛分校",
+			"abbr": "NEUQ",
+			"campus": "本",
+			"slogan": "自强不息　知行合一",
+			"classmates": ["U2FsdGVkX19r1RdTYC1dMzmAgGCYLoXHF0Z9We4ECck="],
+			"province": "河北"
 		},
 		"geometry": {
 			"type": "Point",
