@@ -45,6 +45,18 @@
 			"type": "LineString",
 			"coordinates": [
 				[112.77871, 34.922213],
+				[106.607617, 29.530807]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
 				[122.124892, 40.688184]
 			]
 		}
@@ -70,6 +82,18 @@
 			"coordinates": [
 				[112.77871, 34.922213],
 				[123.418324, 41.765235]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
+				[119.552084, 39.922216]
 			]
 		}
 	}, {
