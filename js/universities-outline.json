@@ -75,7 +75,7 @@
 	}, {
 		"type": "Feature",
 		"properties": {
-			"classmates": 2
+			"classmates": 1
 		},
 		"geometry": {
 			"type": "LineString",

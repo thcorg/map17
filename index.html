@@ -110,62 +110,75 @@
                     <div id="map-container"></div>
                 </div>
                 <div class="col-xs-9 col-sm-3 sidebar-offcanvas" id="sidebar">
-                    <h3>院校列表</h3>
-                    <div class="input-group" style="margin-bottom: 5px;">
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </span>
-                        <input type="text" class="form-control" id="input-search" placeholder="搜索…">
-                    </div>
-                    <div class="btn-group btn-group-justified" id="sort-by-button-group" style="margin-bottom: 5px;">
-                        <a href="#" class="btn btn-default" data-sort-by="abbr">
-                            <span class="glyphicon glyphicon-sort-by-alphabet"></span>
-                            升序
-                        </a>
-                        <a href="#" class="btn btn-default" data-sort-by="abbrDes">
-                            <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
-                            降序
-                        </a>
-                    </div>
-                    <div class="btn-group btn-group-justified" style="margin-bottom: 5px;">
-                        <a href="#" class="btn btn-default" id="btn-shuffle">
-                            <span class="glyphicon glyphicon-transfer"></span>
-                            随机
-                        </a>
-                    </div>
-                    <div class="alert alert-danger fade in" id="alert-verify-guide">
-                        <p><strong>您尚未获得查看权限！</strong>请进入
-                            <span class="glyphicon glyphicon-menu-hamburger"></span>
-                            菜单 - 
-                            <span class="glyphicon glyphicon-cog"></span>
-                            设置
-                            以验证身份信息。
-                        </p>
-                    </div>
-                    <div class="list-group" id="map-list"></div>
-                    <h3>声明</h3>
-                    <p>本网页支持中华人民共和国领土主权与领土完整。</p>
-                    <p>本网页采用的数字地图来自<a href="https://lbs.amap.com/" target="_blank">高德开放平台</a>提供的<a href="https://lbs.amap.com/api/javascript-api" target="_blank">地图 JS API</a>；引用的“美食中国地图”插画来自网络，因艺术表现、坐标转换等原因，在范围等方面存在误差，仅作装饰之用，不代表中华人民共和国实际领土范围及面积。</p>
-                    <p>本网页在 GitHub 开源，仅供学习参考，不作商业用途，并由以下平台或软件提供技术支持：</p>
-                    <ul>
-                        <li>
-                            <a href="https://lbs.amap.com/" target="_blank">高德开放平台</a>
-                            <ul>
-                                <li><a href="https://lbs.amap.com/api/javascript-api/" target="_blank">地图 JS API</a></li>
-                                <li><a href="https://lbs.amap.com/api/amap-ui/" target="_blank">AMapUI 组件库</a></li>
-                                <li><a href="https://lbs.amap.com/api/loca-v2/" target="_blank">数据可视化 JS API</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap 3</a></li>
-                        <li><a href="https://jquery.com/" target="_blank">jQuery v3.6.0</a></li>
-                        <li><a href="https://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
-                        <li><a href="https://zzz.dog" target="_blank">Zdog</a></li>
-                        <li><a href="https://jaames.github.io/zfont/" target="_blank">Zfont</a></li>
-                        <li><a href="https://github.com/brix/crypto-js" target="_blank">CryptoJS</a></li>
+                    <ul class="nav nav-tabs" id="tablist">
+                        <li class="active"><a href="#list" data-toggle="tab">院校列表</a></li>
+                        <li><a href="#state" data-toggle="tab">声明</a></li>
                     </ul>
-                    <p>本网页展示的 Zdog 模型中使用的字体为 <a href="https://developer.harmonyos.com/cn/design" target="_blank">HarmonyOS Sans</a>。</p>
-                    <p>“美食中国地图”插画来自网络，由于能力不足，我们未能找到插画作者。如果引用该插画侵犯了您的权益，请<a href="mailto:hcrpaandaa@outlook.com">致邮</a>联系，我们将在收到来信后删除该插画的引用，在此提前表示歉意。</p>
-                    <p>本网页展示的列表无先后顺序之分。</p>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="list">
+                            <h3>院校列表</h3>
+                            <div class="input-group" style="margin-bottom: 5px;">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </span>
+                                <input type="text" class="form-control" id="input-search" placeholder="搜索…">
+                            </div>
+                            <div class="btn-group btn-group-justified" id="sort-by-button-group" style="margin-bottom: 5px;">
+                                <a href="#" class="btn btn-default" data-sort-by="abbr">
+                                    <span class="glyphicon glyphicon-sort-by-alphabet"></span>
+                                    升序
+                                </a>
+                                <a href="#" class="btn btn-default" data-sort-by="abbrDes">
+                                    <span class="glyphicon glyphicon-sort-by-alphabet-alt"></span>
+                                    降序
+                                </a>
+                            </div>
+                            <div class="btn-group btn-group-justified" style="margin-bottom: 5px;">
+                                <a href="#" class="btn btn-default" id="btn-shuffle">
+                                    <span class="glyphicon glyphicon-transfer"></span>
+                                    随机
+                                </a>
+                            </div>
+                            <div class="alert alert-danger fade in" id="alert-verify-guide">
+                                <p><strong>您尚未获得查看权限！</strong>请进入
+                                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                    菜单 - 
+                                    <span class="glyphicon glyphicon-cog"></span>
+                                    设置
+                                    以验证身份信息。
+                                </p>
+                            </div>
+                            <div class="list-group" id="map-list"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="state">
+                            <h3>声明</h3>
+                            <p>本网页支持中华人民共和国领土主权与领土完整。</p>
+                            <p>本网页采用的数字地图来自<a href="https://lbs.amap.com/" target="_blank">高德开放平台</a>提供的<a href="https://lbs.amap.com/api/javascript-api" target="_blank">地图 JS API</a>；引用的“美食中国地图”插画来自网络，因艺术表现、坐标转换等原因，在范围等方面存在误差，仅作装饰之用，不代表中华人民共和国实际领土范围及面积。</p>
+                            <p>本网页在 GitHub 开源，仅供学习参考，不作商业用途，并由以下平台或软件提供技术支持：</p>
+                            <ul>
+                                <li>
+                                    <a href="https://lbs.amap.com/" target="_blank">高德开放平台</a>
+                                    <ul>
+                                        <li><a href="https://lbs.amap.com/api/javascript-api/" target="_blank">地图 JS API</a></li>
+                                        <li><a href="https://lbs.amap.com/api/amap-ui/" target="_blank">AMapUI 组件库</a></li>
+                                        <li><a href="https://lbs.amap.com/api/loca-v2/" target="_blank">数据可视化 JS API</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap 3</a></li>
+                                <li><a href="https://jquery.com/" target="_blank">jQuery v3.6.0</a></li>
+                                <li><a href="https://isotope.metafizzy.co/" target="_blank">Isotope</a></li>
+                                <li><a href="https://zzz.dog" target="_blank">Zdog</a></li>
+                                <li><a href="https://jaames.github.io/zfont/" target="_blank">Zfont</a></li>
+                                <li><a href="https://github.com/brix/crypto-js" target="_blank">CryptoJS</a></li>
+                            </ul>
+                            <p>本网页展示的 Zdog 模型中使用的字体为 <a href="https://developer.harmonyos.com/cn/design" target="_blank">HarmonyOS Sans</a>。</p>
+                            <p>“美食中国地图”插画来自网络，由于能力不足，我们未能找到插画作者。如果引用该插画侵犯了您的权益，请<a href="mailto:hcrpaandaa@outlook.com">致邮</a>联系，我们将在收到来信后删除该插画的引用，在此提前表示歉意。</p>
+                            <p>本网页展示的列表无先后顺序之分。</p>
+                            <p>
+                                <strong>本网页在尊重个人意愿的基础上展示您的相关信息，若本网页展示您的相关信息对您产生冒犯，请及时<a href="mailto:hcrpaandaa@outlook.com">致邮</a>或通过其它方式（包括但不限于 QQ 临时对话）联系，并尽量文明发言，我们将在收到来讯后删除您的相关信息。</strong>在此，我们再次向 1 位被冒犯者表示衷心的歉意。
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -180,5 +193,11 @@
         <script src="js/zfont.min.js"></script>
         <script src="js/main-map.js"></script>
         <script src="js/main-zdog.js"></script>
+        <script>
+            $('#tablist a').click(function (e) {
+                e.preventDefault()
+                $(this).tab('show')
+            })
+        </script>
     </body>
 </html>
