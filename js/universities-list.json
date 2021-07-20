@@ -199,6 +199,20 @@
 	}, {
 		"type": "Feature",
 		"properties": {
+			"name": "天津大学",
+			"abbr": "TJU",
+			"campus": "卫津路",
+			"slogan": "实事求是",
+			"classmates": ["U2FsdGVkX19gBZAcm66KzLt24p5iKYTcLXEDnRkhg3w="],
+			"province": "天津"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [117.170443, 39.110201]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
 			"name": "武汉大学",
 			"abbr": "WHU",
 			"campus": "本",

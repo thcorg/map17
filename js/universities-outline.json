@@ -177,6 +177,18 @@
 			"type": "LineString",
 			"coordinates": [
 				[112.77871, 34.922213],
+				[117.170443, 39.110201]
+			]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"classmates": 1
+		},
+		"geometry": {
+			"type": "LineString",
+			"coordinates": [
+				[112.77871, 34.922213],
 				[114.364382, 30.536325]
 			]
 		}
