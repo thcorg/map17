@@ -313,14 +313,14 @@
 		"properties": {
 			"name": "中南财经政法大学",
 			"abbr": "ZUEL",
-			"campus": "南湖",
+			"campus": "首义",
 			"slogan": "博文明理　厚德济世",
 			"classmates": ["U2FsdGVkX19Ew6vAvVcF9/SEs5NL3IEgyqEtY3Big5o="],
 			"province": "湖北"
 		},
 		"geometry": {
 			"type": "Point",
-			"coordinates": [114.386234, 30.473798]
+			"coordinates": [114.313162, 30.537365]
 		}
 	}, {
 		"type": "Feature",
